@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/nav_graph">
+
+
+    <include
+        android:id="@+id/nav_graph"
+        app:graph="@navigation/nav_graph">
+        <action
+            android:id="@+id/action_newsFragment_to_savedNewsFragment"
+            destination="@id/saved_nav_graph"/>
+    </include>
+    <include
+        android:id="@+id/saved_nav_graph"
+        app:graph="@navigation/saved_nav_graph" />
+</navigation>
